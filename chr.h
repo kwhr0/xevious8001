@@ -1,0 +1,10 @@
+void chrLocate(s8 x, s8 y);
+void chrColor(u8 color);
+Sprite *chrPut(u8 c);
+void chrPuts(u8 *str);
+void chrPutsBuf(u8 *str);
+void chrTime(u8 time);
+void chrValue(u8 *buf, u8 len, u16 v);
+void chrInit();
+void chrUpdate();
+void chrFlush();

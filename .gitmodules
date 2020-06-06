@@ -1,0 +1,3 @@
+[submodule "lib8001"]
+	path = lib8001
+	url = https://github.com/kwhr0/lib8001.git

@@ -1,0 +1,593 @@
+# Emitter Schedule Source
+# 1st: stage
+# 2nd: X of BMP
+# 3rd: Y of BMP (ground object) / period (flying object)
+# 4th: name (prefix'+': fixed flying object)
+# 5th: score/10 (grobda only)
+# following: movement format: frame,x,y
+
+1	0	200	toroid
+1	137	274	barra
+1	137	282	zolbak
+1	240	60	toroid
+1	253	275	barra
+1	253	283	logram
+1	292	294	barra
+1	300	294	logram
+1	329	302	zolbak
+1	337	294	logram
+1	380	180	toroid
+1	467	283	logram
+1	475	283	zolbak
+1	530	312	sol
+1	570	293	grobda	200
+1	585	293	grobda	200
+1	590	30	+torkan
+1	600	293	grobda	200	
+1	610	90	giddospario
+1	670	0	+special
+1	690	150	toroid
+1	700	288	logram
+1	700	296	barra
+1	772	320	zolbak
+1	780	312	logram
+1	783	250	logram
+1	788	304	zolbak
+1	796	296	logram
+1	804	288	zolbak
+1	825	240	sol
+1	827	288	bozalogram
+2	-40	80	toroid
+2	65	392	domogram	10,-1,0 10,-1,1 255,0,1
+2	110	412	logram
+2	110	420	barra
+2	145	370	zolbak
+2	145	378	logram
+2	183	412	logram
+2	183	420	logram
+2	190	80	torkan
+2	229	396	domogram	20,-1,0 8,-1,-0.5 255,-1,0
+2	264	418	logram
+2	300	396	domogram	16,-1,0 45,0,1 255,-1,0
+2	310	60	torkan
+2	325	416	logram
+2	325	424	zolbak
+2	376	420	logram
+2	376	50	giddospario
+2	470	370	zolbak
+2	510	410	logram
+2	510	418	zolbak
+2	518	410	zolbak
+2	518	418	logram
+2	527 377	domogram	7,-1,1 22,-1,0 6,-1,1 255,-1,0
+2	545	450	sol
+2	580	40	torkan
+2	654	380	domogram	7,0,-1 22,-1,0 22,-1,-0.5 255,-1,0
+2	664	441	domogram	24,-1,0 36,-1,-1 255,-0.5,-1
+2	685	415	sol
+2	710	372	zolbak
+2	710	380	logram
+2	720	60	torkan
+2	772	415	domogram	24,-1,-1 255,0,-1
+2	777	398	barra
+2	785	406	zolbak
+2	793	414	barra
+2	801	422	zolbak
+2	809	430	barra
+2	810	1	toroid
+2	835	391	logram
+2	835	399	logram
+2	850	382	zolbak
+2	850	390	derota
+2	850	399	derota
+2	850	408	zolbak
+3	-20	440	+bacura
+3	52	124	zolbak
+3	253	80	logram
+3	261	80	zolbak
+3	320	74	garubarra
+3	340	55	sol
+3	380	1	+torkan
+3	384	100	logram
+3	392	100	barra
+3	405	0	+special
+3	430	94	barra
+3	430	102	zolbak
+3	460	80	giddospario
+3	530	70	zolbak
+3	530	90	logram
+3	575	123	logram
+3	600	70	giddospario
+3	600	123	zolbak
+3	610	110	grobda	100	255,0,0 255,-1,0
+3	660	60	zolbak
+3	660	86	logram
+3	670	70	jara
+3	720	70	barra
+3	720	82	logram
+3	720	94	zolbak
+3	720	106	barra
+3	757	94	zolbak
+3	807	100	zolbak
+3	807	116	logram
+3	807	132	zolbak
+3	828	111	garuderota
+3	830	144	sol
+4	-40	60	toroid
+4	26	340	domogram	12,-1,0 64,1,0 255,-1,0
+4	84	392	domogram	30,-1,0 255,-1,1
+4	122	365	barra
+4	122	373	zolbak
+4	137	354	domogram	28,-1,-0.5 255,-1,0
+4	150	80	zoshi
+4	192	373 sol
+4	200	332	logram
+4	200	340	zolbak
+4	216	396	domogram	8,-1,0 8,-1,-0.5 255,-1,0
+4	271	377	zolbak
+4	279	385	zolbak
+4	287	377	logram
+4	298	385	logram
+4	298	396	domogram	16,-1,0 40,1,0 255,-1,0
+4	320	70	giddospario
+4	420	1	+bacura
+4	460	150	+zakato_d
+4	480	255	+genesis
+4	690	30	+bacura
+4	760	80	+zakato_s
+5	-60	120	zoshi
+5	115	182	garuderota
+5	115	158	barra
+5	115	166	zolbak
+5	123	158	zolbak
+5	123	166	barra
+5	155	146	grobda	10
+5	190	70	zakato_d
+5	205	163	grobda	10	255,-0.5,0
+5	220	190	grobda	10	255,-0.5,0
+5	235	163	grobda	10	255,-0.5,0
+5	240	70	torkan
+5	250	190	grobda	10
+5	265	215	grobda	10
+5	290	185	garuderota
+5	330	205	grobda	10	255,-1,0
+5	350	170	grobda	10	255,-1,0
+5	355	155	grobda	10	255,-1,0
+5	360	140	grobda	10	255,-1,0
+5	360	100	torkan
+5	465	0	+special
+5	496	218	sol
+5	500	190	domogram	8,-1,0 11,1,0 11,0,1 11,0,-1 3,-1,0
+5	522	177	barra
+5	530	177	logram
+5	538	177	barra
+5	546	177	logram
+5	550	80	kapi
+5	645	147	zolbak
+5	675	50	kapi
+5	722	170	zolbak
+5	735	150	domogram	30,0,1 5,1,0 255,0,-1
+5	735	208	sol
+5	790	150	domogram	255,0,1
+5	802	215	domogram	255,0,-1
+5	814	150	domogram	255,0,1
+5	830	170	garuderota
+5	835	140	zolbak
+5	835	205	zolbak
+6	30	280	logram
+6	30	288	barra
+6	50	340	domogram	32,-1,0 32,1,0 255,-1,0
+6	120	345	domogram	10,-1,-0.5 255,-1,0
+6	133	282	zolbak
+6	141	274	logram
+6	165	355	domogram	26,-1,0 30,-1,-0.5 255,-1,0
+6	230	355	domogram	255,-1,0
+6	253	275	logram
+6	253	283	barra
+6	296	290	zolbak
+6	296	298	zolbak
+6	329	294	garuderota
+6	350	70	zakato_d
+6	400	350	sol
+6	466	282	bozalogram
+6	500	335	grobda	100	255,-0.5,0 20,-1,0
+6	515	320	grobda	100	255,-0.5,0 20,0,0
+6	515	350	grobda	100	255,-0.5,0 20,0,0
+6	530	335	grobda	100	255,-0.5,0 20,0,0
+6	572	316	zolbak
+6	580	324	logram
+6	595	362	domogram	16,-1,0 30,-0.5,-1 13,-1,-1 22,0,-1 255,-1,0
+6	610	324	logram
+6	630	316	logram
+6	650	280	domogram	13,0,1 255,-1,0
+6	670	340	domogram	20,-1,0 255,0,-1
+6	730	320	zolbak
+6	772	320	logram
+6	780	304	logram
+6	788	288	logram
+6	828	278	garuderota
+6	828	294	garuderota
+7	-40	560	+bacura
+7	46	48	zolbak
+7	54	48	barra
+7	190	63	domogram	12,-1,-1 24,1,-1 24,1,0 24,1,1 24,-1,1 255,-1,0
+7	202	75	domogram	24,-1,-1 24,1,-1 24,1,0 24,1,1 24,-1,1 255,-1,0
+7	214	75	domogram	12,-1,0 24,-1,-1 24,1,-1 24,1,0 24,1,1 24,-1,1 255,-1,0
+7	226	75	domogram	24,-1,0 24,-1,-1 24,1,-1 24,1,0 24,1,1 24,-1,1 255,-1,0
+7	238	63	domogram	12,-1,1 24,-1,0 24,-1,-1 24,1,-1 24,1,0 24,1,1 255,-1,1
+7	250	51	domogram	24,-1,1 24,-1,0 24,-1,-1 24,1,-1 24,1,0 24,1,1 255,-1,1
+7	332	52	barra
+7	340	60	logram
+7	348	68	zolbak
+7	356	76	barra
+7	440	1	+kapi
+7	446	75	logram
+7	460	10	sol
+7	532	30	barra
+7	532	50	zolbak
+7	532	70	barra
+7	532	90	zolbak
+7	550	0	+special
+7	640	200	+bacura
+7	720	70	zolbak
+7	720	90	zolbak
+7	755	10	grobda	100	255,-0.5,0 20,1,0
+7	775	25	grobda	1000	255,0,0 20,-1,0
+7	820	1	+terrazi
+7	850	85	sol
+8	20	30	jara
+8	45	434	domogram	32,0,-1 10,1,-1 50,1,0 255,-1,0
+8	78	354	logram
+8	78	431	logram
+8	90	366	zolbak
+8	90	419	zolbak
+8	102	378	logram
+8	102	407	logram
+8	173	419	barra
+8	184	415	garuderota
+8	188	404	logram
+8	188	434	logram
+8	206	419	barra
+8	265	419	zolbak
+8	290	50	zoshi
+8	300	370	domogram	30,-1,-0.5 255,-1,0
+8	300	396	domogram	16,-1,0 18,0,1 18,0,-1 255,-1,0
+8	300	441	domogram	16,-1,0 18,0,-1 18,0,1 255,-1,0
+8	372	393	domogram	36,-1,0 6,-1,0.5 255,-1,0
+8	374	441	domogram	36,-1,0 36,1,0 255,-1,0
+8	376	414	zolbak
+8	376	422	logram
+8	430	50	giddospario
+8	446	390	domogram	16,-1,0 62,1,0 6,1,-1 22,1,0 26,1,-1 255,1,-0.5
+8	470	355	sol
+8	496	412	logram
+8	496	420	zolbak
+8	510	441	domogram	255,-1,0
+8	522	441	domogram	255,-1,0
+8	534	441	domogram	255,-1,0
+8	550	441	grobda	10	255,-1,0
+8	562	441	grobda	10	255,-1,0
+8	653	389	domogram	16,0,-1 22,-1,0 22,-1,-0.5 255,-1,0
+8	653	405	domogram	32,0,-1 21,-1,0 21,-1,1 255,-1,0
+8	653	421	domogram	20,0,1 255,-1,0
+8	712	372	derota
+8	712	417	derota
+8	768	411	domogram	20,-1,-1 255,0,-1
+8	778	421	domogram	30,-1,-1 255,0,-1
+8	788	431	domogram	40,-1,-1 255,0,-1
+8	798	387	domogram	50,-1,0 255,0,-1
+8	809	377	domogram	10,-1,1 51,-1,0 255,0,-1
+8	819	367	domogram	20,-1,1 255,-1,0
+8	825	390	zolbak
+8	825	406	zolbak
+8	825	422	zolbak
+8	845	390	derota
+8	845	422	derota
+9	-40	90	+giddospario
+9	20	240	sol
+9	28	255	sol
+9	36	270	sol
+9	44	285	sol
+9	100	40	+zoshi
+9	133	274	garuderota
+9	160	40	zakato_d
+9	200	20	terrazi
+9	255	1	+sheonite
+9	420	1	+garuzakato
+9	440	255	+genesis
+9	490	130	zakato_d
+9	670	70	bragzakato
+9	740	100	toroid
+10	-40	30	bragzakato
+10	50	120	kapi
+10	200	55	domogram	20,-1,-1 20,1,1
+10	200	65	domogram	20,-1,0 20,1,0
+10	200	75	domogram	20,-1,1 20,1,-1
+10	210	45	domogram	10,0,-1 20,0,1 10,0,-1
+10	210	85	domogram	10,0,1 20,0,-1 10,0,1
+10	230	45	domogram	10,-1,1 20,1,-1 10,-1,1
+10	230	85	domogram	10,-1,-1 20,1,1 10,-1,-1
+10	230	65	domogram	10,-1,0 20,1,0 10,-1,0
+10	310	50	barra
+10	310	66	barra
+10	318	58	barra
+10	326	50	barra
+10	326	66	barra
+10	350	1	+garuzakato
+10	388	102	zolbak
+10	396	102	zolbak
+10	400	1	+garuzakato
+10	426	96	barra
+10	426	104	barra
+10	450	1	+garuzakato
+10	520	44	zolbak
+10	520	60	barra
+10	520	76	zolbak
+10	558	76	domogram	16,0,1 50,1,0 255,-1,0
+10	650	40	sol
+10	650	56	sol
+10	650	72	sol
+10	650	88	sol
+10	666	40	sol
+10	666	56	sol
+10	666	72	sol
+10	666	88	sol
+10	720	70	barra
+10	720	86	logram
+10	720	102	barra
+10	760	95	zolbak
+10	790	72	garubarra
+10	814	72	garubarra
+10	830	39	derota
+10	830	115	derota
+10	854	39	derota
+10	854	115	derota
+11	0	1	terrazi
+11	20	200	+bacura
+11	50	366	bozalogram
+11	82	340	domogram	255,-1,0
+11	108	392	domogram	55,-1,0	255,-1,1
+11	168	392	domogram	20,-1,0 52,1,0 8,1,0.5 36,1,0 36,-1,0 8,-1,-0.5 255,-1,0
+11	175	330	logram
+11	175	338	zolbak
+11	210	355	grobda	100	255,-0.5,0
+11	225	355	grobda	100	255,-0.5,0
+11	240	355	grobda	100	255,-0.5,0
+11	255	355	grobda	150	255,0,0 20,1,0
+11	265	396 grobda	250	255,-0.5,0 20,1,0
+11	305	396	grobda	150	255,-0.5,0 20,1,0
+11	330	150	+bacura
+11	350	50	zoshi
+11	422	370	sol
+11	435	370	sol
+11	460	390	domogram	20,-1,0 52,1,0 6,1,-1 22,1,0 26,1,-1 20,1,-0.5 14,0,-1 15,-1,-1 255,0,-1
+11	482	372	zolbak
+11	490	364	barra
+11	498	356	zolbak
+11	506	348	barra
+11	514	340	zolbak
+11	522	332	barra
+11	530	324	zolbak
+11	538	316	barra
+11	540	20	zakato_d
+11	540	130	torkan
+11	615	210	+bacura
+11	670	20	zakato_d
+11	755	325	domogram	10,0,1 7,-1,1 49,0,1 255,1,1
+11	766	366	garuderota
+11	800	398	sol
+11	810	388	sol
+11	815	320	zolbak
+11	815	340	zolbak
+11	820	378	sol
+11	830	368	sol
+11	835	320	barra
+11	835	340	barra
+12	45	430	domogram	30,0,-1 8,1,-1 27,1,0 27,-1,0 8,-1,1 255,0,1
+12	80	361	derota
+12	80	370	zolbak
+12	80	415	zolbak
+12	80	423	derota
+12	88	369	derota
+12	88	415	derota
+12	89	361	zolbak
+12	89	424	zolbak
+12	100	392	domogram	10,-1,0 30,1,0 255,-1,0
+12	175	415	grobda	40	255,-0.5,0
+12	175	425	grobda	40	255,-0.5,0
+12	185	415	grobda	40	255,-0.5,0
+12	185	425	grobda	40	255,-0.5,0
+12	226	370	barra
+12	234	370	barra
+12	234	383	barra
+12	242	383	barra
+12	260	355	domogram	255,-1,0
+12	299	396	domogram	15,-1,0 45,0,1 255,-1,0
+12	313	441	domogram	255,-1,0
+12	330	441	domogram	255,-1,0
+12	350	60	jara
+12	370	393	domogram	25,-1,0 255,-1,-0.5
+12	392	352	sol
+12	392	360	sol
+12	400	352	sol
+12	400	360	sol
+12	430	60	zakato_d
+12	480	406	barra
+12	480	414	zolbak
+12	490	441	domogram	25,-1,0 80,1,0 255,-1,0
+12	510	406	zolbak
+12	510	414	barra
+12	520	60	zakato_d
+12	606	376	derota
+12	653	377	domogram	64,0,1 255,-1,0
+12	653	393	domogram	48,0,1 255,-1,0
+12	653	409	domogram	32,0,1 255,-1,0
+12	712	366	zolbak
+12	712	374	zolbak
+12	744	404	derota
+12	752	412	derota
+12	760	420	derota
+12	768	428	derota
+12	770	441	grobda	60	255,0,0 20,0.5,0
+12	790	441	grobda	60	255,0,0 20,0.5,0
+12	810	441	grobda	60	255,0,0 20,0.5,0
+12	827	400	garuderota
+12	830	441	grobda	60	255,0,0 20,0.5,0
+12	830	388	domogram	15,-1,0 31,0,1 31,1,0 31,0,-1 16,-1,0
+12	845	419	domogram	31,0,-1 31,-1,0 31,0,1 31,1,0
+13	20	250	derota
+13	30	180	derota
+13	30	204	derota
+13	50	180	zolbak
+13	58	188	zolbak
+13	66	196	zolbak
+13	74	204	zolbak
+13	106	174	derota
+13	130	174	derota
+13	165	100	zakato_d
+13	250	185	garuderota
+13	250	225	garuderota
+13	270	70	jara
+13	300	200	grobda	40	255,-0.5,0
+13	315	215	grobda	40	255,-0.5,0
+13	330	230	grobda	250	255,-0.5,0 20,1,0
+13	345	245	grobda	40	255,-0.5,0
+13	375	230	grobda	250	255,-0.5,0 20,1,0
+13	390	215	grobda	40	255,-0.5,0
+13	405	200	grobda	40	255,-0.5,0
+13	420	185	grobda	40	255,-0.5,0
+13	440	100	toroid
+13	506	170	zolbak
+13	514	178	logram
+13	522	186	zolbak
+13	530	194	logram
+13	538	202	zolbak
+13	580	80	+zoshi_b
+13	680	250	sol
+13	690	100	zakato_d
+13	720	170	derota
+13	782	170	domogram	35,0,1 255,0,-1
+13	782	250	domogram	35,0,-1 255,0,1
+13	792	180	domogram	25,0,1 255,0,-1
+13	792	240	domogram	25,0,-1 255,0,1
+13	810	60	jara
+13	810	60	giddospario
+14	-40	50	+toroid
+14	40	20	+bacura
+14	70	50	+bragzakato
+14	110	100	+genesis
+14	110	30	+zoshi
+14	180	30	zakato_d
+14	210	50	jara
+14	340	1	+sheonite
+14	470	50	zakato_d
+14	530	1	+garuzakato
+14	550	50	zakato_d
+14	560	100	+genesis
+14	580	40	giddospario
+14	630	50	terrazi
+14	720	150	torkan
+14	720	150	jara
+15	-40	40	toroid
+15	40	340	domogram	25,-1,0 25,1,0 25,-1,0 25,1,0 255,-1,0
+15	40	280	sol
+15	55	315	logram
+15	70	340	domogram	20,-1,0 25,1,0 255,-1,0
+15	90	315	zolbak
+15	100	340	domogram	15,-1,0 25,1,0 255,-1,0
+15	129	350	domogram	11,-1,-0.5 16,1,0.5 24,-1,-0.5 255,-1,0
+15	133	282	zolbak
+15	141	274	zolbak
+15	150	355	domogram	6,-1,0 40,1,0 45,-1,0 255,-1,-0.5
+15	152	333	logram
+15	190	333	zolbak
+15	195	355	domogram	56,-1,0 255,-1,-0.5
+15	220	355	grobda	10	255,-1,0
+15	235	355	grobda	10	255,-1,0
+15	240	330	sol
+15	253	275	zolbak
+15	253	283	logram
+15	255	100	jara
+15	284	298	sol
+15	292	290	sol
+15	333	294	logram
+15	333	302	zolbak
+15	390	50	torkan
+15	390	50	jara
+15	468	280	garuderota
+15	500	335	domogram	15,-1,-1 15,1,1
+15	500	345	domogram	15,-1,1 15,1,-1
+15	520	325	domogram	10,-1,1 15,1,-1 5,-1,1
+15	520	355	domogram	10,-1,-1 15,1,1 5,-1,-1
+15	555	295	domogram	4,-1,1 20,0,1 14,1,1 12,0.5,1 24,-1,0.5 255,-1,1
+15	570	313	zolbak
+15	586	329	logram
+15	602	345	zolbak
+15	615	293	domogram	15,-1,0 50,1,0 4,0,-1 255,0,1
+15	650	280	domogram	30,0,1 4,0,-1 255,0,1
+15	650	340	domogram	25,0,-1 255,0,1
+15	700	290	logram
+15	716	306	zolbak
+15	804	304	derota
+15	804	320	derota
+15	804	336	derota
+15	810	50	jara
+15	810	353	grobda	10	255,-0.5,0
+15	820	320	derota
+15	825	353	grobda	10	255,-0.5,0
+15	830	285	garuderota
+15	840	353	grobda	10	255,-0.5,0
+16	-40	70	giddospario
+16	63	392	domogram	8,-1,0 10,-1,1 255,0,1
+16	82	418	derota
+16	90	445	domogram	25,-1,0 15,1,0 35,-1,0 255,0,1
+16	100	392	domogram	25,-1,0 25,1,0 255,-1,0
+16	110	445	domogram	20,-1,0 15,1,0 255,-1,0
+16	120	410	derota
+16	120	426	derota
+16	130	392	domogram	20,-1,0 15,1,0 255,-1,0
+16	136	418	derota
+16	150	445	domogram	25,-1,0 15,1,0 255,-1,0
+16	172	375	logram
+16	172	420	logram
+16	190	392	domogram	18,-1,0 28,1,0 8,1,0.5 76,1,0 18,0,1 18,0,-1 255,-1,0
+16	190	445	domogram	18,-1,0 34,1,0 4,1,-1 74,1,0 18,0,-1 18,0,1 255,-1,0
+16	200	40	toroid
+16	228	410	grobda	10	255,-1,0
+16	228	426	grobda	10	255,-1,0
+16	240	426	grobda	10	255,-1,0
+16	244	410	grobda	10
+16	250	100	terrazi
+16	372	406	zolbak
+16	380	414	zolbak
+16	388	422	zolbak
+16	396	430	zolbak
+16	420	100	terrazi
+16	460	363	logram
+16	460	404	logram
+16	460	428	logram
+16	480	376	logram
+16	480	416	logram
+16	480	452	logram
+16	506	408	garuderota
+16	510	441	grobda	10	255,-1,0
+16	525	441	grobda	10	255,-1,0
+16	550	50	toroid
+16	626	406	logram
+16	638	418	zolbak
+16	640	440	domogram	36,-1,-1 255,-0.5,-1
+16	666	416	derota
+16	680	415	sol
+16	688	380	derota
+16	688	452	derota
+16	700	70	jara
+16	700	70	giddospario
+16	710 391	domogram	20,-1,0 20,1,0 255,-1,0
+16	710 441	domogram	20,-1,0 20,1,0 255,-1,0
+16	710	415	derota
+16	788	431	domogram	40,-1,-1 255,0,-1
+16	788	441	domogram	255,-1,0
+16	813	430	domogram	10,-1,0 32,-1,-1 32,1,0 255,1,-1
+16	820	50	bragzakato
+16	826	400	garuderota
+16	826	416	garuderota
