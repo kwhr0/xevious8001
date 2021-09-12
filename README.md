@@ -1,2 +1,1 @@
-# xevious8001
-Xevious for PC-8001
+http://kwhr0.g2.xrea.com/lib8001/
