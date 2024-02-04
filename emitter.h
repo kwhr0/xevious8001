@@ -16,15 +16,15 @@ typedef struct {
 	u8 type;
 } EmitterSch;
 
-typedef void (*GenTable[])();
+typedef void (*GenTable[])(void);
 typedef void (*GroupFunc)(u8 y, u8 u);
 
-void emitterInit();
-void emitterStart();
+void emitterInit(void);
+void emitterStart(void);
 void emitterGroup(GroupFunc func, u8 u);
-s16 emitterPrm();
-void emitterUpdate();
+s16 emitterPrm(void);
+void emitterUpdate(void);
 
 void diffAdd(s8 v);
 void diffAddFrac(u8 v);
-u8 diffGet();
+u8 diffGet(void);

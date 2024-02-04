@@ -24,18 +24,18 @@ static const u8 yofs[] = {
 
 extern const u8 bgdata[];
 
-void bgDraw(ExpandWork *w, ExpandWork *w2, u8 *dp, u8 n, u8 half);
+void bgDraw(ExpandWork *w, ExpandWork *w2, u8 *dp, u8 n, u8 half) CC0;
 
-void bgInit() {
+void bgInit(void) {
 	stage = STAGE - 1;
 	xofs = 0;
 }
 
-s16 bgOfs() {
+s16 bgOfs(void) {
 	return stage * (BG_XN + PRE_BLANK2) + xofs;
 }
 
-u8 bgStage() {
+u8 bgStage(void) {
 	return stage + 1;
 }
 
@@ -53,7 +53,7 @@ static void setup(u8 index, u8 skip) {
 	if (++yofsp >= yofs + sizeof(yofs)) yofsp = (u8 *)yofs + LOOP;
 }
 
-u8 bgUpdate() {
+u8 bgUpdate(void) {
 	u16 xl = xn - xofs + 1 >> 1;
 	if (xl > XLIM) xl = XLIM;
 	bgDraw(w[sw], w[!sw], vram + XOFS, xl, xofs & 1);
@@ -70,7 +70,7 @@ u8 bgUpdate() {
 	return 0;
 }
 
-void bgStart() {
+void bgStart(void) {
 	if (xofs >= 7 * (BG_XN + PRE_BLANK2) / 10 && ++stage >= sizeof(yofs)) stage = LOOP;
 	xofs = -PRE_BLANK1;
 	xn = BG_XN + PRE_BLANK2;

@@ -2,7 +2,8 @@
 -i xevious_r.ihx
 -b _CODE = 0x68
 -b _HEAP_END = 0xe700
--k /usr/local/share/sdcc/lib/z80
+;-k /usr/local/share/sdcc/lib/z80
+-k /opt/homebrew/share/sdcc/lib/z80
 -l z80
 -l lib8001/lib8001.a
 lib8001/crt0.rel

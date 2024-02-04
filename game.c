@@ -22,12 +22,12 @@ static u8 scoreBuf[6], hiscoreBuf[6];
 static SpriteContext ctx_r, ctx_logo;
 static s8 reserve;
 
-void scoreReset() {
+void scoreReset(void) {
 	score = 0;
 	scoreNext = 2000;
 }
 
-u16 scoreGet() {
+u16 scoreGet(void) {
 	return score;
 }
 
@@ -35,11 +35,11 @@ void demoSet(u8 f) {
 	demo = f;
 }
 
-u8 isDemo() {
+u8 isDemo(void) {
 	return demo;
 }
 
-void scorePrint() {
+void scorePrint(void) {
 	chrTime(2);
 	chrLocate(8, 0);
 	chrPuts("1UP");
@@ -55,7 +55,7 @@ void scorePrint() {
 	chrPut('0');
 }
 
-void scoreUpdate() {
+void scoreUpdate(void) {
 	static u8 timer;
 	if (!demo && !(++timer & 7)) {
 		chrTime(2);
@@ -75,12 +75,12 @@ static void reserveSet(Pattern *pat) {
 	spriteContext(nil);
 }
 
-void reserveInc() {
+void reserveInc(void) {
 	reserveSet(pat_solvalou_r);
 	reserve++;
 }
 
-u8 reserveDec() {
+u8 reserveDec(void) {
 	reserve--;
 	reserveSet(pat_solvalou_r_off);
 	return reserve < 0;
@@ -100,18 +100,18 @@ void scoreAdd(u16 v) {
 	}
 }
 
-u8 triggerGet() {
+u8 triggerGet(void) {
 	u8 r = trigger & KEY5;
 	trigger = 0xff;
 	return r;
 }
 
-static void intKey() {
+static void intKey(void) {
 	trigger &= KEY5;
 	idle();
 }
 
-void logoInit() {
+void logoInit(void) {
 	static Sprite sprite;
 	spriteContext(&ctx_logo);
 	spriteSetup(&sprite, 1, 0);
@@ -123,13 +123,13 @@ void logoInit() {
 	spriteContext(nil);
 }
 
-void logoUpdate() {
+void logoUpdate(void) {
 	spriteContext(&ctx_logo);
 	spriteUpdate();
 	spriteContext(nil);
 }
 
-static void gameStart() {
+static void gameStart(void) {
 	if (isDemo()) logoInit();
 	else {
 		chrTime(60);
@@ -145,7 +145,7 @@ static void gameStart() {
 	playf = 0;
 }
 
-static u8 gameUpdate() {
+static u8 gameUpdate(void) {
 	spriteContext(&ctx_r);
 	spriteUpdate();
 	spriteContext(nil);
@@ -162,7 +162,7 @@ static u8 gameUpdate() {
 	return 1;
 }
 
-void gameInit() {
+void gameInit(void) {
 	reserve = 0;
 	spriteContext(&ctx_r);
 	spriteSetupArray(spriteR);
@@ -192,7 +192,7 @@ static void meter(u8 v) {
 		*p = i < v ? i & 1 ? 0xf0 : 0xf : 0;
 }
 
-void gameMain() {
+void gameMain(void) {
 	spInit();
 	gameStart();
 	bgStart();
@@ -206,7 +206,7 @@ void gameMain() {
 		scoreUpdate();
 		chrUpdate();
 #if 0
-		meter(vramSwap(keyPress() ? 10 : 0));
+		meter(vramSwap(keyPress() ? 10 : 1));
 #else
 		vramSwap(3);
 #endif
@@ -214,7 +214,7 @@ void gameMain() {
 	playStopAll();
 }
 
-void gameoverMain() {
+void gameoverMain(void) {
 	vramSingle();
 	cls();
 	chrInit();

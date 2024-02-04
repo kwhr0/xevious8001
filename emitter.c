@@ -33,11 +33,11 @@ static EmitterSch *esp;
 static u8 diff, diffFrac, groupN, groupU;
 static GroupFunc groupFunc;
 
-void emitterInit() {
+void emitterInit(void) {
 	diff = diffFrac = 0;
 }
 
-void emitterStart() {
+void emitterStart(void) {
 	for (esp = es; esp->ofs != 0x7fff && bgOfs() >= esp->ofs; esp++)
 		;
 	for (Emitter *p = emitter; p < emitter + EMITTER_N; p++) p->timer = 0;
@@ -57,7 +57,7 @@ void diffAddFrac(u8 v) {
 	if (diffFrac < l) diffAdd(1);
 }
 
-u8 diffGet() {
+u8 diffGet(void) {
 	return diff;
 }
 
@@ -67,11 +67,11 @@ void emitterGroup(GroupFunc func, u8 u) {
 	groupFunc = func;
 }
 
-s16 emitterPrm() {
+s16 emitterPrm(void) {
 	return esp->prm;
 }
 
-void emitterUpdate() {
+void emitterUpdate(void) {
 	Emitter *p;
 	if (groupN) {
 		groupN--;

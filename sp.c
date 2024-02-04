@@ -110,7 +110,7 @@ static u8 behaviorBacura(Sprite *p) {
 	return spriteVisible(p);
 }
 
-static void generateBacura() {
+static void generateBacura(void) {
 	SpriteU *s = create(10, pat_bacura);
 	if (!s) return;
 	s->s.behavior = behaviorBacura;
@@ -129,7 +129,7 @@ static u8 behaviorGiddoSpario(Sprite *p) {
 	return spriteVisible(p);
 }
 
-static void generateGiddoSpario() {
+static void generateGiddoSpario(void) {
 	SpriteU *s = create(10, pat_giddo);
 	if (!s) return;
 	s->s.behavior = behaviorGiddoSpario;
@@ -187,8 +187,8 @@ static void generateKT(u8 f) {
 	s->timer = f ? 5 + R(15) : 10 + R(30);
 }
 
-static void generateKapi() { generateKT(0); }
-static void generateTerrazi() { generateKT(1); }
+static void generateKapi(void) { generateKT(0); }
+static void generateTerrazi(void) { generateKT(1); }
 
 //////// Sheo Nite
 
@@ -240,7 +240,7 @@ static void generateSheoNite(u8 f) {
 	s->type = f;
 }
 
-static void generateSheoNites() {
+static void generateSheoNites(void) {
 	generateSheoNite(0);
 	generateSheoNite(1);
 }
@@ -266,7 +266,7 @@ static u8 behaviorTorkan(Sprite *p) {
 	return spriteVisible(p);
 }
 
-static void generateTorkan() {
+static void generateTorkan(void) {
 	SpriteU *s = create(10, pat_torkan);
 	if (!s) return;
 	s->s.behavior = behaviorTorkan;
@@ -312,8 +312,8 @@ static void generateTJ(u8 y, u8 f) {
 	s->type = f;
 }
 
-static void generateToroidGroup() { emitterGroup(generateTJ, 0); }
-static void generateJaraGroup() { emitterGroup(generateTJ, 1); }
+static void generateToroidGroup(void) { emitterGroup(generateTJ, 0); }
+static void generateJaraGroup(void) { emitterGroup(generateTJ, 1); }
 
 //////// Zakato / Brag Zakato / Garu Zakato
 
@@ -375,10 +375,10 @@ static void generateZakato(u8 f) {
 	s->timer = 5 + R(15);
 }
 
-static void generateZakatoS() { generateZakato(0); }
-static void generateZakatoD() { generateZakato(1); }
-static void generateBragZakato() { generateZakato(2); }
-static void generateGaruZakato() { generateZakato(3); }
+static void generateZakatoS(void) { generateZakato(0); }
+static void generateZakatoD(void) { generateZakato(1); }
+static void generateBragZakato(void) { generateZakato(2); }
+static void generateGaruZakato(void) { generateZakato(3); }
 
 //////// Zoshi
 
@@ -410,8 +410,8 @@ static void generateZoshi(u8 f) {
 	s->timer = 20;
 }
 
-static void generateZoshiN() { generateZoshi(0); }
-static void generateZoshiB() { generateZoshi(1); }
+static void generateZoshiN(void) { generateZoshi(0); }
+static void generateZoshiB(void) { generateZoshi(1); }
 
 //////// GROUND OBJECTS
 
@@ -476,9 +476,9 @@ static void generateBDZ(u8 f) {
 	s->type = f;
 }
 
-static void generateBarra() { generateBDZ(0); }
-static void generateDerota() { generateBDZ(1); }
-static void generateZolbak() { generateBDZ(2); }
+static void generateBarra(void) { generateBDZ(0); }
+static void generateDerota(void) { generateBDZ(1); }
+static void generateZolbak(void) { generateBDZ(2); }
 
 //////// Garu Barra / Garu Derota
 
@@ -513,8 +513,8 @@ static void generateGBD(u8 f) {
 	s->type = f;
 }
 
-static void generateGaruBarra() { generateGBD(0); }
-static void generateGaruDerota() { generateGBD(1); }
+static void generateGaruBarra(void) { generateGBD(0); }
+static void generateGaruDerota(void) { generateGBD(1); }
 
 //////// Domogram / Grobda
 
@@ -572,8 +572,8 @@ static void generateDG(u8 f) {
 	if (f) s->s.speedX = -1 << PS;
 }
 
-static void generateDomogram() { generateDG(0); }
-static void generateGrobda() { generateDG(1); }
+static void generateDomogram(void) { generateDG(0); }
+static void generateGrobda(void) { generateDG(1); }
 
 //////// Logram / Boza Logram
 
@@ -601,7 +601,7 @@ static void generateLogram1(s8 ofsx, s8 ofsy, u8 f) {
 	s->type = f;
 }
 
-static void generateLogram() { generateLogram1(0, 0, 0); }
+static void generateLogram(void) { generateLogram1(0, 0, 0); }
 
 static u8 behaviorBoza(Sprite *p) {
 	SpriteU *s = (SpriteU *)p;
@@ -612,7 +612,7 @@ static u8 behaviorBoza(Sprite *p) {
 	return p->x >= EDGE << PS || spriteVisible(p);
 }
 
-static void generateBozaLogram() {
+static void generateBozaLogram(void) {
 	SpriteU *s = create(0, pat_boza);
 	if (!s) return;
 	s->s.behavior = behaviorBoza;
@@ -644,7 +644,7 @@ static u8 behaviorSpecial(Sprite *p) {
 	return spriteVisible(p);
 }
 
-static void generateSpecial() {
+static void generateSpecial(void) {
 	SpriteU *s = create(0, pat_special);
 	if (!s) return;
 	s->s.behavior = behaviorSpecial;
@@ -669,7 +669,7 @@ static u8 behaviorSol(Sprite *p) {
 	return spriteVisible(p);
 }
 
-static void generateSol() {
+static void generateSol(void) {
 	SpriteU *s = create(0, pat_sol);
 	if (!s) return;
 	s->s.behavior = behaviorSol;
@@ -732,7 +732,7 @@ static u8 behaviorAndoreGenesisCore(Sprite *p) {
 	return !AG->state || spriteVisible(p);
 }
 
-static void generateAndoreGenesis() {
+static void generateAndoreGenesis(void) {
 	SpriteU *s = create(1, pat_core);
 	if (!s) return;
 	s->s.behavior = behaviorAndoreGenesisCore;
@@ -781,7 +781,7 @@ static u8 behaviorBlaster(Sprite *p) {
 	return 0;
 }
 
-static void generateZapper() {
+static void generateZapper(void) {
 	SpriteU *s = create(10, pat_zapper);
 	if (!s || !SB) return;
 	s->s.behavior = behaviorZapper;
@@ -792,7 +792,7 @@ static void generateZapper() {
 	playStart(3, MUSIC_ZAP, 0);
 }
 
-static void generateBlaster() {
+static void generateBlaster(void) {
 	SpriteU *s1 = create(10, pat_blaster);
 	if (!s1 || !SB) return;
 	s1->s.behavior = behaviorBlaster;
@@ -894,7 +894,7 @@ static u8 behaviorSolvalou(Sprite *p) {
 	return 1;
 }
 
-static void generateSolvalou() {
+static void generateSolvalou(void) {
 	SpriteU *s = create(10, pat_solvalou);
 	if (!s) return;
 	s->s.behavior = behaviorSolvalou;
@@ -950,7 +950,7 @@ GenTable gentable = {
 	generateSheoNites,
 };
 
-void spInit() {
+void spInit(void) {
 	AG = SB = nil;
 	targetHit = nil;
 	boza = firstmsg = 0;
@@ -960,7 +960,7 @@ void spInit() {
 	generateSolvalou();
 }
 
-u8 spUpdate() {
+u8 spUpdate(void) {
 	blinkframe = blinkframe + BLINKSPEED & (1 << AS + 1) - 1;
 	return SB ? SB->timer < 40 : 0;
 }

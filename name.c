@@ -49,7 +49,7 @@ u8 nameEntry(u16 score) {
 	return edit >= 0;
 }
 
-static void nameInit() {
+static void nameInit(void) {
 	pos = 0;
 	chrTime(1);
 	if (edit >= 0) {
@@ -73,7 +73,7 @@ static void nameInit() {
 	if (edit >= 0) record(edit, 6);
 }
 
-static u8 nameUpdate() {
+static u8 nameUpdate(void) {
 	u8 c = keyDown(1);
 	if (edit >= 0) {
 		u8 *name = best[edit].name;
@@ -91,7 +91,7 @@ static u8 nameUpdate() {
 	return 1;
 }
 
-void nameMain() {
+void nameMain(void) {
 	vramSingle();
 	cls();
 	chrInit();

@@ -32,7 +32,7 @@ $(LIBDIR)/lib8001.a:
 $(DEPEND):
 	touch music.h pattern.h bgconf.h
 	rm -f $(DEPEND)
-	for file in $(DEPFILES); do sdcc -I$(LIBDIR) -MM $$file >> $(DEPEND); done
+	for file in $(DEPFILES); do sdcc -I$(LIBDIR) -MM $$file | sed -e 's/\.o:/.rel:/' >> $(DEPEND); done
 	rm -f music.h pattern.h bgconf.h
 
 clean:

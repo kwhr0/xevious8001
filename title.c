@@ -31,7 +31,7 @@ static u8 behavior2(Sprite *p) {
 	return 1;
 }
 
-static void generate() {
+static void generate(void) {
 	Sprite *p = spriteCreate(0, pat_tss);
 	if (!p) return;
 	p->behavior = behavior2;

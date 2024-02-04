@@ -1,2 +1,2 @@
-void spInit();
-u8 spUpdate();
+void spInit(void);
+u8 spUpdate(void);

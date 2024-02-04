@@ -1,5 +1,5 @@
-void bgInit();
-void bgStart();
-u8 bgUpdate();
-s16 bgOfs();
-u8 bgStage();
+void bgInit(void);
+void bgStart(void);
+u8 bgUpdate(void);
+s16 bgOfs(void);
+u8 bgStage(void);

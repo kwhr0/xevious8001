@@ -89,14 +89,14 @@ void chrPutsBuf(u8 *str) {
 	}
 }
 
-static void chrInitSub() {
+static void chrInitSub(void) {
 	spriteContext(&ctx_c);
 	spriteSetupArray(spriteC);
 	spriteView(0, 0, 79, 25);
 	spriteContext(nil);
 }
 
-void chrInit() {
+void chrInit(void) {
 	chrcolor = 0;
 	chrX = 100;
 	chrY = 0;
@@ -104,13 +104,13 @@ void chrInit() {
 	chrInitSub();
 }
 
-void chrUpdate() {
+void chrUpdate(void) {
 	spriteContext(&ctx_c);
 	spriteUpdate();
 	spriteContext(nil);
 }
 
-void chrFlush() {
+void chrFlush(void) {
 	chrUpdate();
 	chrInitSub();
 }
